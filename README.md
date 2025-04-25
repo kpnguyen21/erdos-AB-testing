@@ -51,6 +51,18 @@ Amour offers a versatile subscription model with three plans tailored to differe
 Last year, Amour Beauty Box reportedly had around 30,000 subscribers and received approximately 15,000 website visits per month, which averages to about 500 visits per day.
 The estimated proportion is calculated as the number of subscribers divided by the total visits.
 
+$$ p = \frac{30,000 \hspace{1mm} \text{subscribers}}{15,000 \hspace{1mm} \text{visits per month} \cdot 12 \hspace{1mm} \text{months per year}} \approx 0.167 $$
 
+We want to construct a 95% confidence interval for p = 16.7% with a margin of error M = 1.2%. The minimum sample size is:
 
+$$ n = \left( \frac{z}{M} \right)^2 \cdot p \cdot (1 - p) = \left( \frac{1.960}{0.012} \right)^2 \cdot 0.167 \cdot (1 - 0.167) \approx 3,711.2$$
 
+We aimed to collect 3,711 samples for the control group and 3,711 samples for the variant group, totaling 7,422 samples. Additionally, we needed to account for duplicate users accessing the website, so our goal was to collect 10,000 samples.
+
+<h4 id="Duration">Duration of the experiment</h4>
+
+The duration of the experiment is calculated by dividing the number of samples that need to be collected by the number of daily visits.
+
+$$\text{Duration} = \frac{10,000 \hspace{1mm} \text{samples}}{500 \hspace{1mm} \text{visits per day}} = 20 \hspace{1mm} \text{days} $$
+
+Therefore, we will conduct the A/B experiment in 20 days.
