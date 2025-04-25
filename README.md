@@ -10,7 +10,8 @@ Amour Beauty Box is a makeup company that offers membership-based services. Over
 
 <ul>
     <li><a href="#Introduction">Introduction</a></li>
-    <li><a href="#Customer-Survey">Customer Survey</a>
+    <li><a href="#User-Journey">User Journey</a>
+    <li><a href="#User-Survey">User Survey</a>
     <li><a href="#Sample">Minimum Sample Size and Duration for Reliable Results</a>
         <ul>
             <li><a href="#Min-Size">Minimum Sample Size</a></li>
@@ -40,7 +41,16 @@ Amour offers a versatile subscription model with three plans tailored to differe
 
 ---
 
-<h3 id="Customer-Survey">Customer Survey</h3>
+<h3 id="User-Journey">User Journey</h3>
+
+---
+
+<h3 id="User-Survey">User Survey</h3>
+
+We’re Amour Beauty Box — a beauty subscription designed to help you discover indie gems, clean beauty, and viral favorites (yes, the ones you keep seeing on TikTok). We're working on making our website and sign-up experience even better, and we’d love your input!
+This short survey takes about 3–4 minutes and helps us shape the perfect subscription experience — from first click to first unboxing.
+As a thank you, you'll be entered to win a $50 Amour shop credit.
+
 
 ---
 
