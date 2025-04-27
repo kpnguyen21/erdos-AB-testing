@@ -12,6 +12,7 @@ Amour Beauty Box is a makeup company that offers membership-based services. Over
     <li><a href="#Introduction">Introduction</a></li>
     <li><a href="#User-Journey">User Journey</a>
     <li><a href="#User-Survey">User Survey</a>
+    <li><a href="#Survey-Result">Key Takeaways from Our Survey</a></li>
     <li><a href="#Sample">Minimum Sample Size and Duration for Reliable Results</a>
         <ul>
             <li><a href="#Min-Size">Minimum Sample Size</a></li>
@@ -65,8 +66,15 @@ In addition, the user can cancel the plan at any time by accessing the Account p
 
 We’re Amour Beauty Box — a beauty subscription designed to help you discover indie gems, clean beauty, and viral favorites (yes, the ones you keep seeing on TikTok). We're working on making our website and sign-up experience even better, and we’d love your input!
 This short survey takes about 3–4 minutes and helps us shape the perfect subscription experience — from first click to first unboxing.
-As a thank you, you'll be entered to win a $50 Amour shop credit.
+As a thank you, you'll be entered to win a $50 Amour Beauty Box shop credit.
 
+---
+
+<h3 id="Survey-Result">Key Takeaways from Our Survey</h3>
+
+Survey results from 312 responses revealed several key insights into user behavior and signup barriers. Many users found the "Join Now" button difficult to locate, which slowed down the signup process. Additionally, hesitation points centered around unclear pricing, the absence of customer reviews, and a lack of product previews, all of which contributed to lower engagement. However, incentives such as first-time discounts, prominently displayed customer reviews, and detailed product previews significantly increased the likelihood of signup, emphasizing the importance of transparency and user trust in driving conversions.
+
+To optimize the signup process and enhance user engagement, the "Join Now" button should be centered and visually emphasized on key pages for better visibility. Introducing clear product previews and showcasing authentic customer reviews earlier in the signup journey will help build trust and transparency. Additionally, testing incentives such as first-time member discounts or bonus items can significantly improve acquisition rates. Streamlining the signup and account creation process with engaging elements—such as interactive visual quizzes—will create a more personalized and enjoyable experience, ultimately encouraging users to complete their registration.
 
 ---
 
@@ -79,11 +87,11 @@ The estimated proportion is calculated as the number of subscribers divided by t
 
 $$ p = \frac{30,000 \hspace{1mm} \text{subscribers}}{15,000 \hspace{1mm} \text{visits per month} \cdot 12 \hspace{1mm} \text{months per year}} \approx 0.167 $$
 
-We want to construct a 95% confidence interval for p = 16.7% with a margin of error M = 1.2%. The minimum sample size is:
+We want to construct a 95% confidence interval for p = 16.7% with a margin of error M = 1.3%. The minimum sample size is:
 
-$$ n = \left( \frac{z}{M} \right)^2 \cdot p \cdot (1 - p) = \left( \frac{1.960}{0.012} \right)^2 \cdot 0.167 \cdot (1 - 0.167) \approx 3,711.2$$
+$$ n = \left( \frac{z}{M} \right)^2 \cdot p \cdot (1 - p) = \left( \frac{1.960}{0.013} \right)^2 \cdot 0.167 \cdot (1 - 0.167) \approx 3,162.2$$
 
-We aimed to collect 3,711 samples for the control group and 3,711 samples for the variant group, totaling 7,422 samples. Additionally, we needed to account for duplicate users accessing the website, so our goal was to collect 10,000 samples.
+We aimed to collect 3,162 samples for the control group and 3,162 samples for the variant group, totaling 6,324 samples. Additionally, we needed to account for duplicate users accessing the website, so our goal was to collect 10,000 samples.
 
 <h4 id="Duration">Duration of the experiment</h4>
 
