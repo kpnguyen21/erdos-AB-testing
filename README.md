@@ -43,6 +43,22 @@ Amour offers a versatile subscription model with three plans tailored to differe
 
 <h3 id="User-Journey">User Journey</h3>
 
+A typical user journey follows the diagram below. First, the user visits the `Homepage` of Amour Beauty Box, which includes an image with a "Join Now" button, a general description of subscriptions, and mentions of popular brands. Clicking "Join Now" takes the user to an `Overview` page that covers box curation and different subscription plans. After understanding the different plans, the user clicks "Subscribe Now", leading to the `Subscription Plans` page. The user selects the subscription plan that fits their needs, which then directs them to the `Account Creation` page. At this step, the user inputs their skin type and beauty preferences and creates an account. Upon completing this step, they are sent to the `Checkout` page to enter payment information and confirm their plan. After paying, the user is sent to the `Confirmation` page, which displays a thank-you message and triggers an email confirmation.
+
+<p float="left">
+  <img src="/Figure/user_journey.JPG" width="1000" />
+</p>
+
+There are various paths in a user journey from visiting the website to subscription confirmation:
+1. Visits Homepage → Exits
+2. Visits Homepage → Overview → Exits
+3. Visits Homepage → Overview → Subscription Plans → Exits
+4. Visits Homepage → Overview → Subscription Plans → Account Creation → Exits
+5. Visits Homepage → Overview → Subscription Plans → Account Creation → Checkout → Exits
+6. Visits Homepage → Overview → Subscription Plans → Account Creation → Checkout → Confirmation
+
+In addition, the user can cancel the plan at any time by accessing the Account page. Understanding the flow is a starting point for selecting key metrics for A/B testing.
+
 ---
 
 <h3 id="User-Survey">User Survey</h3>
