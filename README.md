@@ -283,15 +283,21 @@ We sorted the data and removed duplicate entries to maximize revenue retention. 
 
 Next, we added the columns "RANK_REVENUE" and "RANK_CONVERSION", which represent the average ranks of "REVENUE" and "BUY", respectively.  This step prepares the dataset for the Mann-Whitney U test, if necessary.
 
+We generated exploratory data analysis (EDA) plots to examine the revenue distribution and conversion rates across the two groups. These visualizations provide insights into spending patterns, highlight differences in purchasing behavior, and help identify potential trends or anomalies that may influence overall performance.
+
 <p float="left">
   <img src="/Figure/revenue_distribution.jpg" width="800" />
 </p>
 <p align="center"><b>Figure 3. Revenue distribution between the control and variant groups.</b></p>
 
+The revenue distributions for both the control and variant groups are heavily concentrated at the lower end, suggesting that a significant portion of individuals either did not make a purchase or opted for lower-value transactions. This trend indicates a potential barrier to higher spending, possibly influenced by factors such as pricing, consumer preferences, or product appeal.
+
 <p float="left">
   <img src="/Figure/membership_signups.jpg" width="800" />
 </p>
 <p align="center"><b>Figure 4. Comparison of new sign-ups versus non-sign-ups for new membership between the control and variant groups.</b></p>
+
+In both the control and variant groups, a significantly larger number of individuals chose not to sign up for the membership. Additionally, the variant group exhibited an even higher non-signup rate and a lower number of sign-ups compared to the control group. This suggested that the change we implemented may have had little to no impact on revenue or conversion rates. To confirm this observation, we conducted statistical tests to determine whether these differences were statistically significant.
 
 <h4 id="Normality">Normality Check</h4>
 
@@ -367,8 +373,27 @@ z-value is:
 
 $$z = \frac{U - \mu_U}{\sigma_U}$$
 
-The p-value can be obtained this way.
+The p-value for the U statistic can be obtained by computing the p-value of the corresponding z-score.
 
+<table>
+  <tr>
+    <th rowspan="1"></th>
+    <th colspan="1">Conversion Rate</th>
+    <th colspan="1">Revenue</th>
+  </tr>
+    <tr>
+        <td>Statistics</td>
+        <td>4980184.0</td>
+        <td>4979759.0</td>
+    </tr>
+    <tr>
+        <td>p-value</td>
+        <td>$\approx 0.5998$</td>
+        <td>$\approx 0.6021$</td>
+    </tr>
+</table>
+
+Our results indicated that the p-values for U-statistics in both conversion rate and revenue exceeded the significance level of 0.05. As a result, we failed to reject both null hypotheses. 
 
 ---
 
