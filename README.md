@@ -304,6 +304,7 @@ In both the control and variant groups, a significantly larger number of individ
 Since our sample size was large, we chose not to use the T-test. There were several options for conducting an A/B test, depending on whether the data was normally distributed. If the conversion rate or revenue had followed a Gaussian distribution, we would have performed a Z-test. Otherwise, we recommended using the Mann-Whitney U test, a non-parametric method that did not require the assumption of normality. Therefore, our first step was to test for normality.
 
 • **Null hypothesis ($$H_0$$):** The population (`conversion rate` or `revenue`) from which the sample is drawn is normally distributed.
+
 • **Alternative hypothesis ($$H_1$$):**  The population (`conversion rate` or `revenue`) from which the sample is drawn is not normally distributed. 
 
 <table>
