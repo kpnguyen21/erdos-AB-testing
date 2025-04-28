@@ -216,10 +216,22 @@ Secondly, we also conduct an A/B test on revenue, as a high conversion rate does
 
 <h4 id="H0">Null hypotheses and Alternative hypotheses</h4>
 
+To evaluate the effectiveness of the proposed improvements to the signup flow at Amour Beauty Box, we carefully defined two sets of hypotheses: one addressing the conversion rate and the other examining revenue per user based on the position of the 'Join Now' button on the homepage. In the control design, the button had been placed in the top left corner, while in the variant design, it had been repositioned prominently in the center to enhance visibility and encourage user engagement.
+
 <p float="left">
   <img src="/Figure/control.PNG" width="400" />
   <img src="/Figure/variant.PNG" width="400" /> 
 </p>
+Figure. (Left)The control group, where the 'Join Now' button is positioned at the top left. 
+
+(Right) The variant group, where the ‘Join Now’ button is positioned at the center.
+
+For conversion rate:
+• Null hypothesis ($H_{01}$) asserted that the proportion of users signing up was the same between the control group and the variant group. That is, the change implemented in the variant group does not lead to a statistically significant increase in conversion rate.
+•	Alternative hypothesis (H₁₁) proposed that signup rates differed between the two groups, indicating that the implemented change has led to a statistically significant increase in conversion rate.
+Similarly, for revenue: 
+•	Null hypothesis (H₀₂) posited that there was no difference in revenue per user between the control and variant groups 
+•	Alternative hypothesis (H₁₂) suggested that revenue differs across groups.
 
 
 
