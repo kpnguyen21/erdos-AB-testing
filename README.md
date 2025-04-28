@@ -12,7 +12,6 @@ Amour Beauty Box is a makeup company that offers membership-based services. Over
     <li><a href="#Introduction">Introduction</a></li>
     <li><a href="#User-Journey">User Journey</a>
     <li><a href="#User-Survey">User Survey</a>
-    <li><a href="#Survey-Result">Key Takeaways from Our Survey</a></li>
         <ul>
             <li><a href="#Section-1">Section 1: First Impressions</a></li>
             <li><a href="#Section-2">Section 2: Website & Sign-up Experience</a></li>
@@ -21,6 +20,8 @@ Amour Beauty Box is a makeup company that offers membership-based services. Over
             <li><a href="#Section-5">Section 5: If You Didn't Subscribe</a></li>
             <li><a href="#Section-6">Section 6: Final Thoughts</a></li>
         </ul>
+    <li><a href="#Survey-Result">Key Takeaways from Our Survey</a></li>
+
     <li><a href="#AB">A/B test experiment design</a>
         <ul>
             <li><a href="#Metric">Testing Metrics</a></li>
