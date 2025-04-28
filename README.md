@@ -227,11 +227,16 @@ Figure. (Left)The control group, where the 'Join Now' button is positioned at th
 (Right) The variant group, where the ‘Join Now’ button is positioned at the center.
 
 For conversion rate:
+
 • Null hypothesis ($H_{01}$) asserted that the proportion of users signing up was the same between the control group and the variant group. That is, the change implemented in the variant group does not lead to a statistically significant increase in conversion rate.
-•	Alternative hypothesis (H₁₁) proposed that signup rates differed between the two groups, indicating that the implemented change has led to a statistically significant increase in conversion rate.
+
+•	Alternative hypothesis ($H_{11}$) proposed that signup rates differed between the two groups, indicating that the implemented change has led to a statistically significant increase in conversion rate.
+
 Similarly, for revenue: 
-•	Null hypothesis (H₀₂) posited that there was no difference in revenue per user between the control and variant groups 
-•	Alternative hypothesis (H₁₂) suggested that revenue differs across groups.
+
+•	Null hypothesis ($H_{02}$) posited that there was no difference in revenue per user between the control and variant groups 
+
+•	Alternative hypothesis ($H_{12}$) suggested that revenue differs across groups.
 
 
 
