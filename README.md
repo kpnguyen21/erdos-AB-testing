@@ -332,6 +332,43 @@ Using D'Agostino's K-squared Test (`normaltest` from Python's SciPy library), we
 
 <h4 id="U-Test">Mann Whitney U Test</h4>
 
+The Mann-Whitney U test is equivalent to an independent t-test. It does not assume normality and works well with small sample sizes.
+
+Steps for Mann Whitney U Test:
+
+1. Collect two independent samples.
+2. Rank the data from smallest to largest across both groups. If two observations have the same value, assign them the average rank.
+3. Sum the ranks for each sample (denoted as $R_1$ and $R_2$)
+4. Calculate the U-statistics:
+
+$$ U_1 = n_1 n_2 + \frac{n_1(n_1 + 1)}{2} - R_1 $$
+
+$$ U_2 = n_1 n_2 + \frac{n_2(n_2 + 1)}{2} - R_2 $$
+
+where 
+- $n_1$ and $n_2$ are sample sizes for the two groups
+- $R_1$ and $R_2$ are the rank sums of each group
+
+The final U-statistics is the smallest value of $U_1$ and $U_2$.
+
+5. Compare U to the critical value from the Mann-Whitney U Table at the chosen significance level (e.g. 0.05)
+
+For small sample sizes, the exact distribution of U can be calculated, and the p-value can be determined directly from the CDF. However, for larger sample sizes, the distribution of U can be approximated by a normal distribution, and the p-value can be calculated using the standard normal CDF.
+
+Expected value of U:
+
+$$\mu_U = \frac{n_1 \cdot n_2}{2}$$
+
+Standard error of U:
+
+$$\sigma_U = \sqrt{\frac{n_1 \cdot n_2 \cdot (n_1 + n_2 + 1)}{12}}$$
+
+z-value is:
+
+$$z = \frac{U - \mu_U}{\sigma_U}$$
+
+The p-value can be obtained this way.
+
 
 ---
 
