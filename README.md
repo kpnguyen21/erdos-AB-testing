@@ -161,7 +161,35 @@ As a thank you, you'll be entered to win a $50 Amour Beauty Box shop credit.
 - [x] Personalization to my skin type and preferences
 - [ ] Following the latest beauty trends
 
-12.
+12. When you're thinking about subscribing, what do you want to see before making the decision? (Select all the apply)
+- [x] Real photos/ videos of past boxes
+- [ ] Clear pricing with no surprises
+- [x] Brand names I recognize and trust
+- [x] A way to customize or preview my box
+- [ ] Reviews or social media feedback from others
+
+13. How do you feel about the current subscription pricing and options?
+- [x] Clear and easy to understand
+- [ ] Too many choices - simplify it
+- [ ] Needs more flexibitlity (e.g., pause or skip box options)
+- [ ] I didn't notice the differences between plans
+
+<h4 id="Section-5">Section 5: If You Didn't Subscribe</h4>
+
+14. If you didn't complete your sign-up, what held you back? (Select all that apply)
+- [x] I didn't understand what I was getting
+- [ ] The sign-up process felt too long
+- [x] I wasn't sure how personalized the box would be
+- [ ] I didn't see enough customer feedback or social proof
+- [x] I wanted to see product previews before subscribing
+
+<h4 id="Section-6">Section 6: Final Thoughts</h4>
+
+15. What would make the membership offer more compelling to you?  
+
+16. Do you have any other comments about your experience on the website?
+
+**Thank you so much for your feedback! It means the world to us - and to your future beauty hauls**
 
 ---
 
