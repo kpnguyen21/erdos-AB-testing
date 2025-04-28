@@ -13,8 +13,18 @@ Amour Beauty Box is a makeup company that offers membership-based services. Over
     <li><a href="#User-Journey">User Journey</a>
     <li><a href="#User-Survey">User Survey</a>
     <li><a href="#Survey-Result">Key Takeaways from Our Survey</a></li>
-    <li><a href="#Sample">Minimum Sample Size and Duration for Reliable Results</a>
         <ul>
+            <li><a href="#Section-1">Section 1: First Impressions</a></li>
+            <li><a href="#Section-2">Section 2: Website & Sign-up Experience</a></li>
+            <li><a href="#Section-3">Section 3: Offers & Incentives</a></li>
+            <li><a href="#Section-4">Section 4: Decision-Making Drivers</a></li>
+            <li><a href="#Section-5">Section 5: If You Didn't Subscribe</a></li>
+            <li><a href="#Section-6">Section 6: Final Thoughts</a></li>
+        </ul>
+    <li><a href="#AB">A/B test experiment design</a>
+        <ul>
+            <li><a href="#Metric">Testing Metrics</a></li>
+            <li><a href="#H0">Null hypotheses and Alternative hypotheses</a></li>
             <li><a href="#Min-Size">Minimum Sample Size</a></li>
             <li><a href="#Duration">Duration of the experiment</a></li>
         </ul>
@@ -64,9 +74,94 @@ In addition, the user can cancel the plan at any time by accessing the Account p
 
 <h3 id="User-Survey">User Survey</h3>
 
-We’re Amour Beauty Box — a beauty subscription designed to help you discover indie gems, clean beauty, and viral favorites (yes, the ones you keep seeing on TikTok). We're working on making our website and sign-up experience even better, and we’d love your input!
-This short survey takes about 3–4 minutes and helps us shape the perfect subscription experience — from first click to first unboxing.
+We’re Amour Beauty Box - a beauty subscription designed to help you discover indie gems, clean beauty, and viral favorites (yes, the ones you keep seeing on TikTok). We're working on making our website and sign-up experience even better, and we’d love your input!
+This short survey takes about 3–4 minutes and helps us shape the perfect subscription experience - from first click to first unboxing.
 As a thank you, you'll be entered to win a $50 Amour Beauty Box shop credit.
+
+<h4 id="Section-1">Section 1: First Impressions</h4>
+
+1. What features of our membership stood out to you when you first visited our website? (Select all that apply)
+- [x] Discounted products
+- [ ] Free gifts
+- [x] Early access to launches
+- [x] Exclusive content
+- [ ] Flexible cancellatin
+- [ ] None of the above
+
+2. On your first visit, how easu was it to understand the membership includes?
+- [ ] Very easy
+- [ ] Easy
+- [ ] Neutral
+- [x] Difficult
+- [ ] Very difficult
+
+3. Which of the following caused confusion or hesitation while considering signing up?
+- [ ] Lack of clear pricing
+- [ ] No customer reviews/ testimonials
+- [x] Didn't know what was included
+- [ ] Didn't trust the site
+- [ ] Checkout process was too complicated
+- [ ] Other (please specify): ___________________
+
+<h4 id="Section-2">Section 2: Website & Sign-up Experience</h4>
+
+4. How would you rate the length of the sign-up process?
+- [ ] Very short
+- [ ] Manageable
+- [ ] Slightly long
+- [x] I didn't complete it
+
+5. Did you encounter any technical issues during the sign-up process?
+- [ ] Yes
+- [x] No
+- [ ] Not sure
+
+6. How would you prefer to set your beauty preference and skin type?
+- [x] A visual quiz with image examples
+- [ ] A text-based form with dropdowns
+- [ ] A quick "swipe right/ left" style interaction
+- [ ] I don't want to set preferences - just surprise me!
+
+7. Did seeing (or not seeing) a preview of what's in the first box affect your decision to sign up?
+- [x] Yes - I was more likely to sign up after seeing a preview
+- [ ] Yes - I wanted to see a preview but didn't find one
+- [ ] No - A preview didn't matter to me
+- [ ] I didn't notice whether a preview was shown or not
+
+<h4 id="Section-3">Section 3: Offers & Incentives</h4>
+
+8. Which of the following would make you more likely to sign up? (Select all that apply)
+- [x] First-time member discount
+- [x] Product previews
+- [ ] Trust badges (e.g., "secure checkout")
+- [x] Verified customer reviews
+- [x] Trial period
+- [ ] Other (please specify): ___________________
+
+9. What would motivate you to try a new beauty subscription box for the first time?
+- [ ] A discounted first box
+- [ ] A free bonus item from a trending brand
+- [x] A personalized quiz to match products to me
+- [ ] Seeking product previews on TikTok/ Instagram
+- [ ] Knowing it features eco-friendly or clean beauty brands 
+
+10. What kind of message would most convince you to hit "Subscribe"?
+- [ ] "Get TikTok's hottest products before they sell out"
+- [ ] "Build your prefect box in under 2 minutes"
+- [x] "First box just $9.99 - no commitment"
+- [ ] "Curated clean beauty from emerging brands"
+- [ ] "Join 100,000+ subscribers who love their boxes"
+
+<h4 id="Section-4">Section 4: Decision-Making Drivers</h4>
+
+11. When choosing a beauty subscription box, which of these is most important to you?
+- [ ] The ability to discover new brands
+- [ ] Getting the best value for my money
+- [ ] Eco-conscious and sustainable practices
+- [x] Personalization to my skin type and preferences
+- [ ] Following the latest beauty trends
+
+12.
 
 ---
 
@@ -78,7 +173,27 @@ To optimize the signup process and enhance user engagement, the "Join Now" butto
 
 ---
 
-<h3 id="Sample">Minimum Sample Size and Duration for Reliable Results</h3>
+<h3 id="AB">A/B test experiment design</h3>
+
+<h4 id="Metric">Testing Metrics</h4>
+
+There are two ways to conduct an A/B test, depending on the metric used:
+
+- Conversion refers to any action taken online that aligns with a business’s goals, such as filling out a form, making a purchase, or completing a survey. In this study, the conversion rate represents the proportion of people who sign up for the subscription.
+- Revenue is a continuous metric that directly impacts the business's bottom line.
+
+First, we consider conversion rate, which represents the number of conversions within a given timeframe and is typically expressed as a percentage. For example, if 100 visitors access a website and 10 make a purchase, the conversion rate is 10%. This metric helps businesses assess how effectively their website converts visitors into customers.
+
+Secondly, we also conduct an A/B test on revenue, as a high conversion rate does not necessarily imply high revenue. For example, Amour Beauty Box may have more people signing up for the monthly box, resulting in a high conversion rate but lower revenue. Conversely, if fewer people sign up but opt for annual payments, it would yield a lower conversion rate but higher revenue.
+
+<h4 id="H0">Null hypotheses and Alternative hypotheses</h4>
+
+<p float="left">
+  <img src="/Figure/control.PNG" width="400" />
+  <img src="/Figure/variant.PNG" width="400" /> 
+</p>
+
+
 
 <h4 id="Min-Size">Minimum Sample Size</h4>
 
