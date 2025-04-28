@@ -28,8 +28,13 @@ Amour Beauty Box is a makeup company that offers membership-based services. Over
             <li><a href="#Min-Size">Minimum Sample Size</a></li>
             <li><a href="#Duration">Duration of the experiment</a></li>
         </ul>
+    <li><a href="#Analysis">Data Analysis</a>
+        <ul>
+            <li><a href="#Dataset">Dataset</a></li>
+            <li><a href="#Normality">Normality Check</a></li>
+            <li><a href="#U-Test">Mann Whitney U Test</a></li>
+        </ul>
     <li><a href="#Conclusion">Conclusion</a></li>
-    <li><a href="#Resource">Resource</a></li>
     <li><a href="#Code-Description">Code Description</a></li>
 </ul>
 
@@ -59,6 +64,7 @@ A typical user journey follows the diagram below. First, the user visits the `Ho
 <p float="left">
   <img src="/Figure/user_journey.JPG" width="1000" />
 </p>
+<p align="center"><b>Figure 1. User journey diagram</b></p>
 
 There are various paths in a user journey from visiting the website to subscription confirmation:
 1. Visits Homepage → Exits
@@ -210,9 +216,9 @@ There are two ways to conduct an A/B test, depending on the metric used:
 - Conversion refers to any action taken online that aligns with a business’s goals, such as filling out a form, making a purchase, or completing a survey. In this study, the conversion rate represents the proportion of people who sign up for the subscription.
 - Revenue is a continuous metric that directly impacts the business's bottom line.
 
-First, we consider conversion rate, which represents the number of conversions within a given timeframe and is typically expressed as a percentage. For example, if 100 visitors access a website and 10 make a purchase, the conversion rate is 10%. This metric helps businesses assess how effectively their website converts visitors into customers.
+First, we consider `conversion rate`, which represents the number of conversions within a given timeframe and is typically expressed as a percentage. For example, if 100 visitors access a website and 10 make a purchase, the conversion rate is 10%. This metric helps businesses assess how effectively their website converts visitors into customers.
 
-Secondly, we also conduct an A/B test on revenue, as a high conversion rate does not necessarily imply high revenue. For example, Amour Beauty Box may have more people signing up for the monthly box, resulting in a high conversion rate but lower revenue. Conversely, if fewer people sign up but opt for annual payments, it would yield a lower conversion rate but higher revenue.
+Secondly, we also conduct an A/B test on `revenue`, as a high conversion rate does not necessarily imply high revenue. For example, Amour Beauty Box may have more people signing up for the monthly box, resulting in a high conversion rate but lower revenue. Conversely, if fewer people sign up but opt for annual payments, it would yield a lower conversion rate but higher revenue.
 
 <h4 id="H0">Null hypotheses and Alternative hypotheses</h4>
 
@@ -222,22 +228,20 @@ To evaluate the effectiveness of the proposed improvements to the signup flow at
   <img src="/Figure/control.PNG" width="400" />
   <img src="/Figure/variant.PNG" width="400" /> 
 </p>
-Figure. (Left)The control group, where the 'Join Now' button is positioned at the top left. 
+<p align="center"><b>Figure 2. (Left)The control group, where the 'Join Now' button is positioned at the top left.</b></p>
+    <p align="center"><b>(Right) The variant group, where the ‘Join Now’ button is positioned at the center.</b></p>
 
-(Right) The variant group, where the ‘Join Now’ button is positioned at the center.
+For `conversion rate`:
 
-For conversion rate:
+• **Null hypothesis ($$H_{01}$$)** asserted that the proportion of users signing up was the same between the control group and the variant group. That is, the change implemented in the variant group does not lead to a statistically significant increase in conversion rate.
 
-• Null hypothesis ($H_{01}$) asserted that the proportion of users signing up was the same between the control group and the variant group. That is, the change implemented in the variant group does not lead to a statistically significant increase in conversion rate.
+• **Alternative hypothesis ($H_{11}$)** proposed that signup rates differed between the two groups, indicating that the implemented change has led to a statistically significant increase in conversion rate.
 
-•	Alternative hypothesis ($H_{11}$) proposed that signup rates differed between the two groups, indicating that the implemented change has led to a statistically significant increase in conversion rate.
+Similarly, for `revenue`: 
 
-Similarly, for revenue: 
+• **Null hypothesis ($H_{02}$)** posited that there was no difference in revenue per user between the control and variant groups 
 
-•	Null hypothesis ($H_{02}$) posited that there was no difference in revenue per user between the control and variant groups 
-
-•	Alternative hypothesis ($H_{12}$) suggested that revenue differs across groups.
-
+• **Alternative hypothesis ($H_{12}$)** suggested that revenue differs across groups.
 
 
 <h4 id="Min-Size">Minimum Sample Size</h4>
@@ -259,4 +263,89 @@ The duration of the experiment is calculated by dividing the number of samples t
 
 $$\text{Duration} = \frac{10,000 \hspace{1mm} \text{samples}}{500 \hspace{1mm} \text{visits per day}} = 20 \hspace{1mm} \text{days} $$
 
-Therefore, we will conduct the A/B experiment in 20 days.
+We will test changes to the website and signup flow to evaluate their impact on conversion rates. The control and variant groups will each consist of 3,162 samples (6,324 total, accounting for duplicates, aiming for 10,000 samples overall). The test will run for approximately 20 days.
+
+---
+
+<h3 id="Analysis">Data Analysis</h3>
+
+Perform an A/B test on the dataset [AB_Test_Results.csv](https://github.com/kpnguyen21/erdos-AB-testing/blob/main/Data/AB_Test_Results.csv). 
+
+<h4 id="Dataset">Dataset</h4>
+
+After 20 days, we successfully collected 10,000 samples for the experiment. The dataset consists of three variables:
+
+- `USER_ID`: A unique identifier for each user who accessed the website.
+- `VARIANT_NAME`: A nominal variable that represents either the "control" or "variant" group.
+- `REVENUE`: A continuous metric, where 0 indicates that the user did not make a purchase, while a positive value represents a completed purchase.
+
+We sorted the data and removed duplicate entries to maximize revenue retention. If the same users appeared in both the control and variant groups, the results would be inaccurate, as each user would be counted twice, skewing the data. Therefore, before conducting any analysis, we needed to remove duplicate users.
+
+Next, we added the columns "RANK_REVENUE" and "RANK_CONVERSION", which represent the average ranks of "REVENUE" and "BUY", respectively.  This step prepares the dataset for the Mann-Whitney U test, if necessary.
+
+<p float="left">
+  <img src="/Figure/revenue_distribution.jpg" width="800" />
+</p>
+<p align="center"><b>Figure 3. Revenue distribution between the control and variant groups.</b></p>
+
+<p float="left">
+  <img src="/Figure/membership_signups.jpg" width="800" />
+</p>
+<p align="center"><b>Figure 4. Comparison of new sign-ups versus non-sign-ups for new membership between the control and variant groups.</b></p>
+
+<h4 id="Normality">Normality Check</h4>
+
+Since our sample size was large, we chose not to use the T-test. There were several options for conducting an A/B test, depending on whether the data was normally distributed. If the conversion rate or revenue had followed a Gaussian distribution, we would have performed a Z-test. Otherwise, we recommended using the Mann-Whitney U test, a non-parametric method that did not require the assumption of normality. Therefore, our first step was to test for normality.
+
+• **Null hypothesis ($$H_0$$):** The population (`conversion rate` or `revenue`) from which the sample is drawn is normally distributed.
+• **Alternative hypothesis ($$H_1$$):**  The population (`conversion rate` or `revenue`) from which the sample is drawn is not normally distributed. 
+
+<table>
+  <tr>
+    <th rowspan="2"></th>
+    <th colspan="2">Conversion Rate</th>
+    <th colspan="2">Revenue</th>
+  </tr>
+  <tr>
+    <th>Control</th>
+      <th>Variant</th>
+    <th>Control</th>
+      <th>Variant</th>
+</tr>
+    <tr>
+        <td>Statistics</td>
+        <td>3490.598</td>
+        <td>3781.952</td>
+        <td>9552.712</td>
+        <td>8273.628</td>
+    </tr>
+    <tr>
+        <td>p-value</td>
+        <td>$\approx 0$</td>
+        <td>$\approx 0$</td>
+        <td>$\approx 0$</td>
+        <td>$\approx 0$</td>
+    </tr>
+</table>
+
+Using D'Agostino's K-squared Test (`normaltest` from Python's SciPy library), we rejected the null hypothesis for both the control and variant groups in terms of `conversion rate` and `revenue`. Since neither `conversion rate` nor `revenue` followed a Gaussian distribution, normality could not be assumed. Therefore, we opted for the Mann-Whitney U test—a non-parametric statistical method—to compare the two groups in our A/B testing.
+
+<h4 id="U-Test">Mann Whitney U Test</h4>
+
+
+---
+
+<h3 id="Conclusion">Conclusion</h3>
+
+We failed to reject the null hypothesis for the conversion rate, indicating that the implemented change did not lead to a statistically significant increase in sign-ups. In other words, the adjustment had little to no impact on user behavior, suggesting that additional factors may be influencing conversion rates. This outcome highlights the need for further analysis to explore elements such as user preferences, market conditions, and potential website optimizations that could enhance engagement and drive sign-ups.
+
+Similarly, we failed to reject the second null hypothesis, meaning the change did not result in a statistically significant increase in revenue. The modification did not contribute to higher earnings, implying that user spending and purchasing behavior remained largely unaffected. This finding underscores the importance of further investigation into potential revenue-driving factors, including pricing strategies, customer retention efforts, and external market dynamics that may support financial growth.
+
+---
+
+<h3 id="Code-Description">Code Description</h3>
+
+[AB_Test_Results.csv](https://github.com/kpnguyen21/erdos-AB-testing/blob/main/Data/AB_Test_Results.csv): This dataset is from [Kaggle](https://www.kaggle.com/datasets/sergylog/ab-test-data).
+
+
+[AB_test.ipynb](https://github.com/kpnguyen21/erdos-AB-testing/blob/main/AB_test.ipynb): I analyzed the dataset by performing a normality check and applying the Mann-Whitney U test to the dataset.
