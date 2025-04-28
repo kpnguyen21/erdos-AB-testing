@@ -281,7 +281,7 @@ After 20 days, we successfully collected 10,000 samples for the experiment. The 
 
 We sorted the data and removed duplicate entries to maximize revenue retention. If the same users appeared in both the control and variant groups, the results would be inaccurate, as each user would be counted twice, skewing the data. Therefore, before conducting any analysis, we needed to remove duplicate users.
 
-Next, we added the columns "RANK_REVENUE" and "RANK_CONVERSION", which represent the average ranks of "REVENUE" and "BUY", respectively.  This step prepares the dataset for the Mann-Whitney U test, if necessary.
+Next, we added the columns `RANK_REVENUE` and `RANK_CONVERSION`, which represent the average ranks of `REVENUE` and `BUY`, respectively.  This step prepares the dataset for the Mann-Whitney U test, if necessary.
 
 We generated exploratory data analysis (EDA) plots to examine the revenue distribution and conversion rates across the two groups. These visualizations provide insights into spending patterns, highlight differences in purchasing behavior, and help identify potential trends or anomalies that may influence overall performance.
 
