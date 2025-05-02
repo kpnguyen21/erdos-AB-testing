@@ -91,10 +91,10 @@ As a thank you, you'll be entered to win a $50 Amour Beauty Box shop credit.
 - [ ] Free gifts
 - [x] Early access to launches
 - [x] Exclusive content
-- [ ] Flexible cancellatin
+- [ ] Flexible cancellation
 - [ ] None of the above
 
-2. On your first visit, how easu was it to understand the membership includes?
+2. On your first visit, how easy was it to understand the membership includes?
 - [ ] Very easy
 - [ ] Easy
 - [ ] Neutral
@@ -103,7 +103,7 @@ As a thank you, you'll be entered to win a $50 Amour Beauty Box shop credit.
 
 3. Which of the following caused confusion or hesitation while considering signing up?
 - [ ] Lack of clear pricing
-- [ ] No customer reviews/ testimonials
+- [ ] No customer reviews/testimonials
 - [x] Didn't know what was included
 - [ ] Didn't trust the site
 - [ ] Checkout process was too complicated
@@ -122,7 +122,7 @@ As a thank you, you'll be entered to win a $50 Amour Beauty Box shop credit.
 - [x] No
 - [ ] Not sure
 
-6. How would you prefer to set your beauty preference and skin type?
+6. How would you prefer to set your beauty preferences and skin type?
 - [x] A visual quiz with image examples
 - [ ] A text-based form with dropdowns
 - [ ] A quick "swipe right/ left" style interaction
@@ -139,7 +139,7 @@ As a thank you, you'll be entered to win a $50 Amour Beauty Box shop credit.
 8. Which of the following would make you more likely to sign up? (Select all that apply)
 - [x] First-time member discount
 - [x] Product previews
-- [ ] Trust badges (e.g., "secure checkout")
+- [ ] Trust badges (e.g., "Secure checkout")
 - [x] Verified customer reviews
 - [x] Trial period
 - [ ] Other (please specify): ___________________
@@ -148,12 +148,12 @@ As a thank you, you'll be entered to win a $50 Amour Beauty Box shop credit.
 - [ ] A discounted first box
 - [ ] A free bonus item from a trending brand
 - [x] A personalized quiz to match products to me
-- [ ] Seeking product previews on TikTok/ Instagram
+- [ ] Seeking product previews on TikTok/Instagram
 - [ ] Knowing it features eco-friendly or clean beauty brands 
 
 10. What kind of message would most convince you to hit "Subscribe"?
 - [ ] "Get TikTok's hottest products before they sell out"
-- [ ] "Build your prefect box in under 2 minutes"
+- [ ] "Build your perfect box in under 2 minutes"
 - [x] "First box just $9.99 - no commitment"
 - [ ] "Curated clean beauty from emerging brands"
 - [ ] "Join 100,000+ subscribers who love their boxes"
@@ -164,11 +164,11 @@ As a thank you, you'll be entered to win a $50 Amour Beauty Box shop credit.
 - [ ] The ability to discover new brands
 - [ ] Getting the best value for my money
 - [ ] Eco-conscious and sustainable practices
-- [x] Personalization to my skin type and preferences
+- [x] Personalization based on my skin type and preferences
 - [ ] Following the latest beauty trends
 
-12. When you're thinking about subscribing, what do you want to see before making the decision? (Select all the apply)
-- [x] Real photos/ videos of past boxes
+12. When you're thinking about subscribing, what do you want to see before making the decision? (Select all that apply)
+- [x] Real photos/videos of past boxes
 - [ ] Clear pricing with no surprises
 - [x] Brand names I recognize and trust
 - [x] A way to customize or preview my box
@@ -177,7 +177,7 @@ As a thank you, you'll be entered to win a $50 Amour Beauty Box shop credit.
 13. How do you feel about the current subscription pricing and options?
 - [x] Clear and easy to understand
 - [ ] Too many choices - simplify it
-- [ ] Needs more flexibitlity (e.g., pause or skip box options)
+- [ ] Needs more flexibility (e.g., pause or skip box options)
 - [ ] I didn't notice the differences between plans
 
 <h4 id="Section-5">Section 5: If You Didn't Subscribe</h4>
