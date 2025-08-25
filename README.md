@@ -42,7 +42,7 @@ Amour Beauty Box is a makeup company that offers membership-based services. Over
 
 <h3 id="Introduction">Introduction</h3>
 
-Amour Beauty Box is a beauty subscription company with a clear mission: to be the go-to destination for trend-savvy, socially conscious makeup lovers. What sets Amour apart from other subscription services is its distinctive focus on indie and emerging beauty brands, combined with a deep responsiveness to TikTok and Instagram trends. This means subscribers aren't just getting mainstream products—they’re discovering what’s next in beauty before it hits the shelves.
+Amour Beauty Box is a beauty subscription company with a clear mission: to be the go-to destination for trend-savvy, socially conscious makeup lovers. What sets Amour apart from other subscription services is its distinctive focus on indie and emerging beauty brands, combined with a deep responsiveness to TikTok and Instagram trends. This means subscribers aren't just getting mainstream products—they're discovering what’s next in beauty before it hits the shelves.
 
 In line with its commitment to sustainability, Amour Beauty Box is also eco-friendly, using recyclable packaging and partnering with brands that prioritize clean ingredients and ethical sourcing. The brand resonates most strongly with Gen Z and young millennial consumers, who value both innovation and social responsibility in their beauty choices.
 Subscribers receive curated boxes based on their personal preferences and skin type, ensuring that each delivery feels personalized and exciting. Each box includes exclusive promotions, free shipping, and access to premium products from popular and up-and-coming brands alike. 
@@ -80,7 +80,7 @@ In addition, the user can cancel the plan at any time by accessing the Account p
 
 <h3 id="User-Survey">User Survey</h3>
 
-We’re Amour Beauty Box - a beauty subscription designed to help you discover indie gems, clean beauty, and viral favorites (yes, the ones you keep seeing on TikTok). We're working on making our website and sign-up experience even better, and we’d love your input!
+We're Amour Beauty Box - a beauty subscription designed to help you discover indie gems, clean beauty, and viral favorites (yes, the ones you keep seeing on TikTok). We're working on making our website and sign-up experience even better, and we’d love your input!
 This short survey takes about 3–4 minutes and helps us shape the perfect subscription experience - from first click to first unboxing.
 As a thank you, you'll be entered to win a $50 Amour Beauty Box shop credit.
 
@@ -213,7 +213,7 @@ To optimize the signup process and enhance user engagement, the "Join Now" butto
 
 There are two ways to conduct an A/B test, depending on the metric used:
 
-- Conversion refers to any action taken online that aligns with a business’s goals, such as filling out a form, making a purchase, or completing a survey. In this study, the conversion rate represents the proportion of people who sign up for the subscription.
+- Conversion refers to any action taken online that aligns with a business's goals, such as filling out a form, making a purchase, or completing a survey. In this study, the conversion rate represents the proportion of people who sign up for the subscription.
 - Revenue is a continuous metric that directly impacts the business's bottom line.
 
 First, we consider `conversion rate`, which represents the number of conversions within a given timeframe and is typically expressed as a percentage. For example, if 100 visitors access a website and 10 make a purchase, the conversion rate is 10%. This metric helps businesses assess how effectively their website converts visitors into customers.
@@ -229,7 +229,7 @@ To evaluate the effectiveness of the proposed improvements to the signup flow at
   <img src="/Figure/variant.PNG" width="400" /> 
 </p>
 <p align="center"><b>Figure 2. (Left)The control group, where the 'Join Now' button is positioned at the top left.</b></p>
-    <p align="center"><b>(Right) The variant group, where the ‘Join Now’ button is positioned at the center.</b></p>
+    <p align="center"><b>(Right) The variant group, where the 'Join Now' button is positioned at the center.</b></p>
 
 For `conversion rate`:
 
